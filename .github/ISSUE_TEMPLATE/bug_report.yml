@@ -1,0 +1,43 @@
+name: Bug report
+description: Something doesn't work or looks wrong
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time. The more exact the details, the faster it can be fixed.
+  - type: input
+    id: version
+    attributes:
+      label: Sideslate version
+      description: The release you downloaded (for example 0.2.0). Sideslate PC shows its version at the top of its icon's menu.
+    validations:
+      required: true
+  - type: input
+    id: pc
+    attributes:
+      label: PC
+      description: Windows version and graphics card, for example "Windows 11, NVIDIA RTX 3060".
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Tablet or phone
+      description: Model and Android version (Settings → About), for example "Samsung Galaxy Tab A 2016, Android 7.0".
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log (optional)
+      description: >
+        Sideslate PC writes a log: right-click its icon → Open log folder, and paste the lines from around the time of the
+        problem. Pairing codes are written there too; remove any code that is still valid.
+      render: text
