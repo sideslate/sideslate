@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Ideas and questions
+    url: https://github.com/sideslate/sideslate/issues/new?labels=idea
+    about: Missing a tile, or not sure how something works? Open an issue with the "idea" label.
