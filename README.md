@@ -13,26 +13,30 @@ is off.
 
 ## Download
 
-Get the newest version from **[Releases](https://github.com/sideslate/sideslate/releases/latest)**.
+You need two things: **Sideslate PC** on the PC you want to watch, and **Sideslate** on the tablet or phone.
+Each link downloads the newest version straight away.
 
-| File | For |
+| | Download |
 |---|---|
-| `Sideslate-PC-<version>-windows-x64.zip` | **Sideslate PC**, for the PC you want to watch (Windows 10 or 11, 64-bit) |
-| `Sideslate-<version>-android.apk` | **Sideslate** for the tablet or phone (Android 6.0 or later, 32-bit devices too) |
-| `Sideslate-Display-<version>-windows-x64.zip` | **Sideslate** for a second Windows device used as the dashboard |
-| `*-linux-x64.tar.gz` | Experimental Linux builds, never run on a real Linux desktop |
+| **Your Windows PC** (Windows 10 or 11, 64-bit) | **[⬇ Sideslate PC for Windows](https://github.com/sideslate/sideslate/releases/latest/download/Sideslate-PC-windows-x64.zip)** |
+| **Your Android tablet or phone** (Android 6.0 or later, 32-bit devices too) | **[⬇ Sideslate for Android](https://github.com/sideslate/sideslate/releases/latest/download/Sideslate-android.apk)** |
+| A second Windows device used as the dashboard | [Sideslate for Windows](https://github.com/sideslate/sideslate/releases/latest/download/Sideslate-Display-windows-x64.zip) |
+| Linux (experimental, never run on a real Linux desktop) | [Sideslate PC](https://github.com/sideslate/sideslate/releases/latest/download/Sideslate-PC-linux-x64.tar.gz) · [Sideslate](https://github.com/sideslate/sideslate/releases/latest/download/Sideslate-Display-linux-x64.tar.gz) |
 
-Nothing else has to be installed; .NET is included in every download.
+Nothing else has to be installed; .NET is included in every download. What's new, older versions and the checksums
+(`SHA256SUMS.txt`) are on the [release page](https://github.com/sideslate/sideslate/releases/latest).
 
 ## Install
 
-1. **On the PC:** unzip `Sideslate-PC` into a folder where it can stay, and start `SideslatePC.exe`.
+1. **On the PC:** unzip `Sideslate-PC-windows-x64.zip` into a folder where it can stay, and start `SideslatePC.exe`.
    - Windows may say "Windows protected your PC", because the file is not signed yet. Choose **More info**, then
      **Run anyway**. Compare the file with `SHA256SUMS.txt` on the release page if you want to be sure it's the
      original.
    - Allow it when the firewall asks (private networks are enough).
-   - No window opens. Sideslate PC runs in the background with an icon next to the clock (maybe behind the **^**
-     arrow). Right-click the icon to quit.
+   - A small window at the bottom right says that Sideslate PC runs. It then stays in the background with an icon in
+     the corner of the taskbar. **Windows 11 hides new icons under the ^ arrow** next to the clock; drag the icon onto
+     the taskbar to keep it in view. Right-click the icon to quit.
+   - To update later, unzip the new version and start it: it closes the older copy by itself.
 2. **On the tablet or phone:** open the `.apk` and allow installing from this source when Android asks.
 3. **Open Sideslate.** It searches for your PC by itself. Tap your PC when it appears and type the code that pops up on
    the PC. Both devices must be on the same Wi-Fi.
@@ -41,7 +45,8 @@ No PC? Choose **Use without a PC** and use the clock, calendar, weather, notes a
 
 ## If the PC is not found
 
-- Check that Sideslate PC is running (its icon is next to the clock) and that the firewall allowed it.
+- Check that Sideslate PC is running (its icon is in the corner of the taskbar, maybe under the **^** arrow) and that
+  the firewall allowed it.
 - Guest Wi-Fi networks often stop devices from seeing each other. Use your main network.
 - Some networks block the search. On the tablet, choose **Enter the PC's address** and type the address that the PC
   shows when you right-click the Sideslate PC icon (for example `192.168.1.20`).
